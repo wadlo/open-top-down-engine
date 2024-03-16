@@ -1,23 +1,44 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2p6rf0iikmg7"]
+[gd_scene load_steps=4 format=3 uid="uid://d2p6rf0iikmg7"]
 
 [ext_resource type="Script" path="res://beta/HealthBar.cs" id="1_slqjp"]
-[ext_resource type="Texture2D" uid="uid://dox0lxufwguhp" path="res://demo/graphics/simpleShapes/square.png" id="2_32b6v"]
 
-[node name="HealthBar" type="Node2D" node_paths=PackedStringArray("healthSprite")]
-scale = Vector2(0.5, 0.1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_va1qg"]
+bg_color = Color(0, 0, 0, 0.337255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.631373, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqhhw"]
+bg_color = Color(1, 0.286275, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.639216, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="HealthBar" type="Node2D" node_paths=PackedStringArray("healthProgressBar")]
 script = ExtResource("1_slqjp")
-healthSprite = NodePath("Foreground")
-metadata/healthSprite = NodePath("Foreground")
+healthProgressBar = NodePath("ProgressBar")
+metadata/healthSprite = NodePath("")
 
-[node name="Foreground" type="Sprite2D" parent="."]
-modulate = Color(0, 0.784314, 0, 1)
-z_index = 1
-position = Vector2(-64, -64)
-texture = ExtResource("2_32b6v")
-centered = false
-
-[node name="Background" type="Sprite2D" parent="."]
-modulate = Color(0.784314, 0, 0, 1)
-position = Vector2(-64, -64)
-texture = ExtResource("2_32b6v")
-centered = false
+[node name="ProgressBar" type="ProgressBar" parent="."]
+z_index = 100
+offset_left = -38.0
+offset_top = -8.0
+offset_right = 38.0
+offset_bottom = 8.0
+theme_override_constants/outline_size = 21
+theme_override_styles/background = SubResource("StyleBoxFlat_va1qg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_eqhhw")
+value = 24.6
+show_percentage = false

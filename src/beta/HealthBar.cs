@@ -7,7 +7,7 @@ public partial class HealthBar : Node2D
     Health health;
 
     [Export]
-    Node2D healthSprite;
+    ProgressBar healthProgressBar;
 
     private float startingHealth;
 
@@ -23,7 +23,7 @@ public partial class HealthBar : Node2D
         if (health.health < startingHealth)
         {
             Visible = true;
-            healthSprite.Scale = new Vector2(health.health / startingHealth, healthSprite.Scale.Y);
+            healthProgressBar.Value = health.health / startingHealth * 100.0f;
         }
         else
         {
