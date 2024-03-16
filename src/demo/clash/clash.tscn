@@ -46,6 +46,12 @@ zoom = Vector2(0.35, 0.35)
 [node name="BlueButtons" parent="CanvasLayer" node_paths=PackedStringArray("spawnPoint") instance=ExtResource("3_eda7a")]
 spawnPoint = NodePath("../../BlueSpawnPoint")
 
+[node name="SpawnArcher" parent="CanvasLayer/BlueButtons" index="0"]
+text = "Spawn Blue Archer"
+
+[node name="SpawnSwordsman" parent="CanvasLayer/BlueButtons" index="1"]
+text = "Spawn Blue Swordsman"
+
 [node name="RedButtons" parent="CanvasLayer" node_paths=PackedStringArray("spawnPoint") instance=ExtResource("3_eda7a")]
 anchors_preset = 1
 anchor_left = 1.0
@@ -55,11 +61,19 @@ offset_right = 0.0
 grow_horizontal = 0
 spawnPoint = NodePath("../../RedSpawnPoint")
 
-[node name="Grass" type="Node2D" parent="."]
+[node name="SpawnArcher" parent="CanvasLayer/RedButtons" index="0"]
+text = "Spawn Red Archer"
+
+[node name="SpawnSwordsman" parent="CanvasLayer/RedButtons" index="1"]
+text = "Spawn Red Swordsman"
+
+[node name="Scenery" type="Node2D" parent="."]
+
+[node name="Grass" type="Node2D" parent="Scenery"]
 position = Vector2(158, 317)
 scale = Vector2(0.75, 0.75)
 
-[node name="TextureRect" type="TextureRect" parent="Grass"]
+[node name="TextureRect" type="TextureRect" parent="Scenery/Grass"]
 offset_left = -3135.0
 offset_top = -2107.0
 offset_right = 3155.0
@@ -67,40 +81,43 @@ offset_bottom = 1236.0
 texture = ExtResource("5_sa4tn")
 stretch_mode = 1
 
-[node name="Trees" type="Node2D" parent="."]
+[node name="Trees" type="Node2D" parent="Scenery"]
 
-[node name="TreeCluster" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(-1020, -592)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster4" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster4" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(-1273, 506)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster2" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster2" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(-1175, -338)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster3" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster3" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(-1253, 258)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster5" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster5" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(1237, 535)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster6" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster6" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(1380, 289)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster7" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster7" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(1521, 29)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster8" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster8" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(1266, -380)
 scale = Vector2(1, 1)
 
-[node name="TreeCluster9" parent="Trees" instance=ExtResource("6_i55q3")]
+[node name="TreeCluster9" parent="Scenery/Trees" instance=ExtResource("6_i55q3")]
 position = Vector2(-891, 691)
 scale = Vector2(1, 1)
+
+[editable path="CanvasLayer/BlueButtons"]
+[editable path="CanvasLayer/RedButtons"]

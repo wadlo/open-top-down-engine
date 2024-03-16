@@ -7,7 +7,7 @@ offset_right = 220.0
 offset_bottom = 66.0
 script = ExtResource("1_bg06i")
 
-[node name="SpawnSniper" type="Button" parent="."]
+[node name="SpawnArcher" type="Button" parent="."]
 layout_mode = 2
 text = "Spawn Friendly sniper"
 
