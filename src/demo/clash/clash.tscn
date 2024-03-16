@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d2fj7t1vhauhr" path="res://demo/clash/clashPrefabs/swordsman.tscn" id="4_4dmyr"]
 [ext_resource type="PackedScene" uid="uid://dexlt7rtxdcgy" path="res://demo/clash/clashPrefabs/boar.tscn" id="4_t83ku"]
 [ext_resource type="Texture2D" uid="uid://b17t40be6yck" path="res://demo/graphics/medievalGraphics/swordsman/BlueSwordsman.png" id="5_4386r"]
-[ext_resource type="Texture2D" uid="uid://dl55255306e4n" path="res://demo/graphics/medievalGraphics/other/grass.png" id="5_sa4tn"]
+[ext_resource type="Texture2D" uid="uid://dl55255306e4n" path="res://demo/graphics/medievalGraphics/decorations/grass.png" id="5_sa4tn"]
 [ext_resource type="Texture2D" uid="uid://cgf88vdswcjm2" path="res://demo/graphics/medievalGraphics/archer/RedArcher.png" id="6_dlduy"]
 [ext_resource type="PackedScene" uid="uid://dmdy01sy2etbs" path="res://demo/clash/clashPrefabs/tree_cluster.tscn" id="6_i55q3"]
 [ext_resource type="Texture2D" uid="uid://bi72gt7x674gq" path="res://demo/graphics/medievalGraphics/swordsman/RedSwordsman.png" id="7_fwcjp"]

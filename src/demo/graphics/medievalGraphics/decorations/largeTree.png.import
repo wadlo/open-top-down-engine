@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl55255306e4n"
-path="res://.godot/imported/grass.png-f37e698f14645d4ab11c966a4eabb4af.ctex"
+uid="uid://bkywklwqisecf"
+path="res://.godot/imported/largeTree.png-26720769814d1490103518044bd23807.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://demo/graphics/medievalGraphics/other/grass.png"
-dest_files=["res://.godot/imported/grass.png-f37e698f14645d4ab11c966a4eabb4af.ctex"]
+source_file="res://demo/graphics/medievalGraphics/decorations/largeTree.png"
+dest_files=["res://.godot/imported/largeTree.png-26720769814d1490103518044bd23807.ctex"]
 
 [params]
 

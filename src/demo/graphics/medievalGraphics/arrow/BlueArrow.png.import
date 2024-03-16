@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8kr4aa5alkd3"
-path="res://.godot/imported/smallTree.png-3b8deb7f43fa9a074d1c64a414d599cc.ctex"
+uid="uid://dow0keq7kslov"
+path="res://.godot/imported/BlueArrow.png-bd657d1e68e95685916a98e3dc740b0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://demo/graphics/medievalGraphics/other/smallTree.png"
-dest_files=["res://.godot/imported/smallTree.png-3b8deb7f43fa9a074d1c64a414d599cc.ctex"]
+source_file="res://demo/graphics/medievalGraphics/arrow/BlueArrow.png"
+dest_files=["res://.godot/imported/BlueArrow.png-bd657d1e68e95685916a98e3dc740b0c.ctex"]
 
 [params]
 

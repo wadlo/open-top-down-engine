@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwxysf81ialny"
-path="res://.godot/imported/RedArrow.png-cde274ae7a3dab5563b4a7184c7d250d.ctex"
+path="res://.godot/imported/RedArrow.png-1388943cccf1a20a7552213ba3ad96af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://demo/graphics/medievalGraphics/other/RedArrow.png"
-dest_files=["res://.godot/imported/RedArrow.png-cde274ae7a3dab5563b4a7184c7d250d.ctex"]
+source_file="res://demo/graphics/medievalGraphics/arrow/RedArrow.png"
+dest_files=["res://.godot/imported/RedArrow.png-1388943cccf1a20a7552213ba3ad96af.ctex"]
 
 [params]
 
